@@ -1,3 +1,11 @@
 Fenrir
 ===
-MEAN-stack development box
+Dale's MEAN-stack development box
+
+Initial setup
+--
+```bash
+cd path/to/fenrir
+librarian-puppet install
+vagrant up --provision
+```

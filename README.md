@@ -8,4 +8,6 @@ Initial setup
 cd path/to/fenrir
 librarian-puppet install
 vagrant up --provision
+vagrant ssh
+nodejs /var/www/multifence/bin/www
 ```

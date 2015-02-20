@@ -14,15 +14,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     "api.multifence.vm",
   ]
 
-  config.vm.synced_folder "/Users/dale/www/fenrir", "/var/www",
-    owner: "vagrant", group: "vagrant"
-
   config.vm.provider "virtualbox" do |vb|
     vb.customize ["modifyvm", :id, "--memory", "512"]
   end
   
   config.vm.provision "puppet" do |puppet|
-    puppet.module_path = "modules"
+    puppet.module_path = "puppet/modules"
+    puppet.manifests_path = "puppet/manifests"
     # puppet.options = "--verbose --debug"
   end
 

@@ -1,13 +1,11 @@
-Fenrir
-===
-Dale's MEAN-stack development box
+# Fenrir
+Vagrant box for MEAN-stack development
 
-Initial setup
---
+## Initial setup
 ```bash
 cd path/to/fenrir
 librarian-puppet install
 vagrant up --provision
-vagrant ssh
-nodejs /var/www/multifence/bin/www
 ```
+
+Put any apps in the `apps` directory on the host machine. They'll be mapped to the `/vagrant/apps` directory in the vm.

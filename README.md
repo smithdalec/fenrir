@@ -3,7 +3,7 @@ Vagrant box for MEAN-stack development
 
 ## Initial setup
 ```bash
-cd path/to/fenrir
+cd path/to/fenrir/puppet
 librarian-puppet install
 vagrant up --provision
 ```

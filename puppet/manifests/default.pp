@@ -27,3 +27,5 @@ file { '/usr/bin/node':
   ensure => 'link',
   target => '/usr/bin/nodejs',
 }
+
+class { '::mongodb::server': }
